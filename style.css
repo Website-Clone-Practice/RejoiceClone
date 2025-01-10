@@ -1,0 +1,113 @@
+@font-face {
+    font-family: slight;
+    src: url(./Resources/SuisseIntl-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SuisseIntl-Light';
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+#cursor {
+    background-color: tomato;
+    border-radius: 50%;
+    width: 7.5vw;
+    height: 7.5vw;
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursor {
+    font-size: 1.2vw;
+    font-weight: 200;
+    z-index: 5;
+    /* transform: translate(-50%,-50%); */
+}
+
+
+#page1 video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#page1-content {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1vh;
+    z-index: 10;
+    color: white;
+    display: flex;
+
+
+
+}
+
+nav {
+    /* background-color: rgba(0, 0, 0, 0.225); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 3vw;
+}
+
+nav h3 {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+/* 
+#rejoiceb {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding-bottom: 10vh;
+} */
+
+#rejoiceb span {
+    font-size: 25vw;
+    font-weight: 500;
+    font-family: "slight";
+    /* line-height: 27vw; */
+
+}
+
+
+#page2 {
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+}
