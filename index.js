@@ -10,7 +10,9 @@ var pageContent1 = document.querySelector('#page1-content')
 // })
 
 pageContent1.addEventListener('mousemove',function(event){
+    playreel.style.zIndex = 5 ;
       gsap.to(playreel,{
+       
         x:event.x,
         y:event.y
       })
