@@ -1,41 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | REJOICE®️</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Resources/favicon-16x16.png">
-</head>
-<body>
-    
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Resources/favicon-16x16.png"
+    />
+  </head>
+  <body>
     <div id="main">
-        <div id="page1">
-            <div id="cursor">
-                <h5>Play Reel</h5>
-            </div>
-            <video src="./Resources/reel-short.mp4" loop muted autoplay></video>
-            <div id="page1-content">
-                <nav>
-                    <h3>The Venture Agency.</h3>
-                    <h4>Menu</h4>
-                </nav>
-                <h3 id="rejoiceb"><span>r</span><span>e</span><span>j</span><span>o</span><span>i</span><span>c</span><span>e</span></h3>
-            </div>
+      <div id="page1">
+        <div id="cursor">
+          <h5>Play Reel</h5>
         </div>
+        <video src="./Resources/reel-short.mp4" loop muted autoplay></video>
+        <div id="page1-content">
+          <nav>
+            <h3>The Venture Agency.</h3>
+            <h4>Menu</h4>
+          </nav>
+          <h3 id="rejoiceb">
+            <span>r</span><span>e</span><span>j</span><span>o</span
+            ><span>i</span><span>c</span><span>e</span>
+          </h3>
+        </div>
+      </div>
 
-        <div id="page2">
-hwlo
+      <div id="page2">
+        <div id="page2content">
+          <div id="topcontent">
+            <div class="left">
+              <h3>Full-Service Creative Agency</h3>
+              <h3>Two Engagement Models</h3>
+            </div>
+            <div class="right">
+              <h3>Paris & San Diego</h3>
+            </div>
+          </div>
+
+          <div id="bottomcontent">
+            <h3>
+              We are a digital brand accelerator. We design, develop, and market
+              defining brands through award-winning deliverables. Choose full cash
+              compensation or offset up to 50% of our equity in your company.
+              Your vision, your decision.
+            </h3>
+          </div>
         </div>
+      </div>
     </div>
 
+    </div>
 
+    <!-- GSAP and ScrollTrigger Libraries -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Locomotive Scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom JavaScript -->
     <script src="index.js"></script>
-    
-</body>
+  </body>
 </html>
