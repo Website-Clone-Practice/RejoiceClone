@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cookie Example</h2>
+    <input type="text" id="nameInput1" placeholder="Enter your name">
+    <button onclick="setCookies()">Set Cookies</button>
+    <button onclick="getCookie()">Get Cookie</button>
+    <button onclick="deleteCookie()">Delete Cookie</button>
+    <p id="output"></p>
+
+    <script>
+        // Function to get the cookie value
+        function getCookie() {
+            let cookies = document.cookie.split('; ');
+
+            for (let i = 0; i < cookies.length; i++) {
+                let cookiesPart = cookies[i].split('=');
+                let key = cookiesPart[0];
+                let value = cookiesPart[cookiesPart.length - 1];
+                if (key === 'username1') {
+                    document.getElementById("output").innerText = "Hello, " + value;
+                    console.log(value);
+                }
+            }
+        }
+
+        // Function to set a cookie
+        function setCookies() {
+            let name1 = document.getElementById("nameInput1").value;
+            let expires = "expires=Mon, 17 Mar 2025 23:59:59 GMT; path=/";
+            document.cookie = "username1=" + name1 + "; " + expires;
+            alert("Cookies set!");
+        }
+
+        // Function to delete the cookie
+        function deleteCookie() {
+            document.cookie = "username1=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+            alert("Cookie deleted!");
+        }
+    </script>
+</body>
+</html>
